@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './img/logo.svg';
 import React from 'react';
 import './App.css';
 import { AK } from './config.js';
@@ -53,7 +53,7 @@ class WeatherApp extends React.Component {
     month[10] = "Nov";
     month[11] = "Dec";
     return (<div>
-      < p>{weekday[d.getDay()]}</p>
+      <p>{weekday[d.getDay()]}</p>
       <p>{d.getDate()}. {month[d.getMonth()]}. {d.getFullYear()}</p>
     </div>)
   }
@@ -74,7 +74,7 @@ class WeatherApp extends React.Component {
           <div id="video">
             <video className="video" autoPlay loop muted>
               <source src={video} type="video/webm" />
-              <source src={video} type="video/mp4" />
+              <source src={video} type="video/ogg" />
             Your browser does not support the video tag.
           </video>
           </div>
@@ -83,7 +83,7 @@ class WeatherApp extends React.Component {
               <div>
                 <img src={logo} className="App-logo" alt="logo" />
               </div>
-              <div className="title">
+              <div className="title title_front">
                 <p >8-Day Weather Forecast</p>
                 <p>{weatherData.timezone}</p>
               </div>
@@ -99,7 +99,7 @@ class WeatherApp extends React.Component {
                       <div>{daily.weather.map(weather => {
                         return (
                           <div>
-                            <img src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`} className="weatherIcon" alt={'aaa'} />
+                            <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} className="weatherIcon" alt={'aaa'} />
                             <p>{weather.description}</p>
                           </div>)
                       })}
@@ -111,7 +111,7 @@ class WeatherApp extends React.Component {
                     <div>{daily.weather.map(weather => {
                       return (
                         <div>
-                          <img src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`} className="weatherIcon__back" alt={'aaa'} />
+                          <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} className="weatherIcon__back" alt={'aaa'} />
                           <p>{this.date(daily.dt)} </p>
                         </div>
                       )

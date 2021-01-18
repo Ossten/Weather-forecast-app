@@ -1,4 +1,6 @@
-
+:root{
+  --teal-gradient-opaque:linear-gradient(135deg, rgba(2, 170, 176, .55), rgba(0, 205, 172, .55));
+}
 
 .weatherCard{
     perspective: 150rem;
@@ -8,10 +10,10 @@
     float: left;
     height: 35rem;
     width: 13rem;
-    margin: 0.5rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
     border-radius: 2px;
-    opacity: 0.8;
     backface-visibility: hidden;
+    color:white;
     
   }
 
@@ -20,22 +22,24 @@
     position: absolute;
     width: 100%;
     overflow: hidden;
+    margin: 0rem;
     transition: all 0.8s ease-in-out;
-    background: linear-gradient(135deg, #02aab0, #00cdac);
     box-shadow: 20px 30px 50px 1px rgba(0,0,0,.4);
     filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
-    color: white;
+    background: var(--teal-gradient-opaque);
   }
 
   .weatherCard .weatherCard__back{
     transform: rotateY(180deg);
-    background: linear-gradient(135deg, #02aab0, #00cdac);
     box-shadow: 20px 30px 50px 1px rgba(0,0,0,.4);
     filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
     font-size: 1rem;
     text-align:left ;
     padding: 0 1rem 0 1rem;
     width:11rem;
+    color:white;
+    margin: 0rem;
+    background: var(--teal-gradient-opaque);
   }
 
   .weatherIcon__back{
@@ -70,15 +74,22 @@
   and (min-device-width : 320px) 
   and (max-device-width : 480px) {
   .weatherCard{
-    width:92%;
+    width:96%;
   }
   .weatherCard__back{
-    width:92% !important;
+    width:91% !important;
     font-size: 1.1rem !important;
+    
   }
   .weatherIcon__back{
     filter: drop-shadow( 8px 8px 5px rgba(0, 0, 0, .6));
     height:6rem !important;
     width: 6rem !important;
+  }
+  .weatherCard__front:hover{
+    transform: rotateY(180) !important;
+  }
+  .weatherCard__back:hover{
+    transform: rotateY(0) !important;
   }
 }
