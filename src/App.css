@@ -1,10 +1,10 @@
 :root{
   --teal-gradient-opaque:linear-gradient(135deg, rgba(2, 170, 176, .55), rgba(0, 205, 172, .55));
+  --drop-shadow-card:drop-shadow(4px 4px 3px rgba(0, 0, 0, .6));
 }
 
 .weatherApp {
   text-align: center;
-  /* background: linear-gradient( 135deg, #08519b, #43cea2);  */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
   height: 20vmin;
   pointer-events: none;
   text-shadow: 2px 2px 4px #000000;
-  filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
+  filter: var(--drop-shadow-card);
 }
 
 .App-logo .logo-gradient{
@@ -34,11 +34,10 @@
 
 .title {
   perspective: 150rem;
-  /* background: linear-gradient(135deg, rgba(2, 170, 176, .55), rgba(0, 205, 172, .55)); */
   background: var(--teal-gradient-opaque);
   width:92.5vw;
   border-radius: 3px;
-  filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
+  filter: var(--drop-shadow-card);
   backface-visibility: hidden;
 }
 
@@ -72,7 +71,8 @@ video { object-fit: fill; }
     bottom: 0;
     left: 0;
     overflow: hidden;
-    opacity: 0.2;
+    background: rgba(0,0,0,0.5);
+    opacity: 0.6;
 }
 
 @media only screen 

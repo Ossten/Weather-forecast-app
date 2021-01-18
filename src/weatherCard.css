@@ -1,5 +1,7 @@
 :root{
   --teal-gradient-opaque:linear-gradient(135deg, rgba(2, 170, 176, .55), rgba(0, 205, 172, .55));
+  --drop-shadow-card:drop-shadow(8px 8px 4px rgba(0, 0, 0, .6));
+  --box-shadow-card:(10px 10px 20px 1px rgba(0,0,0,.4));
 }
 
 .weatherCard{
@@ -10,7 +12,7 @@
     float: left;
     height: 35rem;
     width: 13rem;
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    margin: 2rem 0.5rem 1rem 0.5rem;
     border-radius: 2px;
     backface-visibility: hidden;
     color:white;
@@ -24,15 +26,13 @@
     overflow: hidden;
     margin: 0rem;
     transition: all 0.8s ease-in-out;
-    box-shadow: 20px 30px 50px 1px rgba(0,0,0,.4);
-    filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
+    box-shadow: var(--box-shadow-card);
     background: var(--teal-gradient-opaque);
+    filter: var(--drop-shadow-card);
   }
 
   .weatherCard .weatherCard__back{
     transform: rotateY(180deg);
-    box-shadow: 20px 30px 50px 1px rgba(0,0,0,.4);
-    filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
     font-size: 1rem;
     text-align:left ;
     padding: 0 1rem 0 1rem;
@@ -40,13 +40,15 @@
     color:white;
     margin: 0rem;
     background: var(--teal-gradient-opaque);
+    box-shadow: var(--box-shadow-card);
+    filter: var(--drop-shadow-card);
   }
 
   .weatherIcon__back{
     height:3rem;
     width: 3rem;
     float: right;
-    filter: drop-shadow( 8px 8px 5px rgba(0, 0, 0, .6));
+    filter: var(--drop-shadow-card);
   }
 
   ul {
