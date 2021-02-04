@@ -18,7 +18,7 @@
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 17vmin;
   pointer-events: none;
   text-shadow: 2px 2px 4px #000000;
   filter: var(--drop-shadow-card);
@@ -32,35 +32,25 @@
   --color-bot:#43cea2;
 }
 
-.title {
-  perspective: 150rem;
-  background: var(--teal-gradient-opaque);
-  width:92.5vw;
-  border-radius: 3px;
-  filter: var(--drop-shadow-card);
-  backface-visibility: hidden;
-}
-
-.title_back{
-  transform: rotateY(180deg);
-}
-
-.cardWrapper{
+.headerWrapper{
+  width: 100%;
   text-align: center;
 }
+
+
 
 .App {
   text-align: center;
 }
 
-.App-header {
+/* .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 video { object-fit: fill; }
 
