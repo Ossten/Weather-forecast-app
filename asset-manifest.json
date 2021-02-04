@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Weather-forecast-app/static/css/main.c429d236.chunk.css",
-    "main.js": "/Weather-forecast-app/static/js/main.da4ec2b2.chunk.js",
-    "main.js.map": "/Weather-forecast-app/static/js/main.da4ec2b2.chunk.js.map",
-    "runtime-main.js": "/Weather-forecast-app/static/js/runtime-main.b034efcd.js",
-    "runtime-main.js.map": "/Weather-forecast-app/static/js/runtime-main.b034efcd.js.map",
-    "static/js/2.6f38fea9.chunk.js": "/Weather-forecast-app/static/js/2.6f38fea9.chunk.js",
-    "static/js/2.6f38fea9.chunk.js.map": "/Weather-forecast-app/static/js/2.6f38fea9.chunk.js.map",
-    "static/js/3.58085589.chunk.js": "/Weather-forecast-app/static/js/3.58085589.chunk.js",
-    "static/js/3.58085589.chunk.js.map": "/Weather-forecast-app/static/js/3.58085589.chunk.js.map",
+    "main.css": "/Weather-forecast-app/static/css/main.272eafd5.chunk.css",
+    "main.js": "/Weather-forecast-app/static/js/main.ea5fda83.chunk.js",
+    "main.js.map": "/Weather-forecast-app/static/js/main.ea5fda83.chunk.js.map",
+    "runtime-main.js": "/Weather-forecast-app/static/js/runtime-main.09c15ed7.js",
+    "runtime-main.js.map": "/Weather-forecast-app/static/js/runtime-main.09c15ed7.js.map",
+    "static/js/2.a9aa70e1.chunk.js": "/Weather-forecast-app/static/js/2.a9aa70e1.chunk.js",
+    "static/js/2.a9aa70e1.chunk.js.map": "/Weather-forecast-app/static/js/2.a9aa70e1.chunk.js.map",
+    "static/js/3.0d121aa5.chunk.js": "/Weather-forecast-app/static/js/3.0d121aa5.chunk.js",
+    "static/js/3.0d121aa5.chunk.js.map": "/Weather-forecast-app/static/js/3.0d121aa5.chunk.js.map",
     "index.html": "/Weather-forecast-app/index.html",
-    "static/css/main.c429d236.chunk.css.map": "/Weather-forecast-app/static/css/main.c429d236.chunk.css.map",
-    "static/js/2.6f38fea9.chunk.js.LICENSE.txt": "/Weather-forecast-app/static/js/2.6f38fea9.chunk.js.LICENSE.txt",
+    "static/css/main.272eafd5.chunk.css.map": "/Weather-forecast-app/static/css/main.272eafd5.chunk.css.map",
+    "static/js/2.a9aa70e1.chunk.js.LICENSE.txt": "/Weather-forecast-app/static/js/2.a9aa70e1.chunk.js.LICENSE.txt",
     "static/media/logo.ea46f5ad.svg": "/Weather-forecast-app/static/media/logo.ea46f5ad.svg",
     "static/media/video.defbf1bb.webm": "/Weather-forecast-app/static/media/video.defbf1bb.webm"
   },
   "entrypoints": [
-    "static/js/runtime-main.b034efcd.js",
-    "static/js/2.6f38fea9.chunk.js",
-    "static/css/main.c429d236.chunk.css",
-    "static/js/main.da4ec2b2.chunk.js"
+    "static/js/runtime-main.09c15ed7.js",
+    "static/js/2.a9aa70e1.chunk.js",
+    "static/css/main.272eafd5.chunk.css",
+    "static/js/main.ea5fda83.chunk.js"
   ]
 }
